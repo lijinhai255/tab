@@ -15,7 +15,7 @@ class App extends Component {
             <React.Fragment>
                 <Switch>
                     {/* 我的订单 */} 
-                    <Route exact path="/" component={ Myorder } />
+                    <Route exact path="/" component={ list } />
                     <Route exact path="/myorder" component={ Myorder } />
                 </Switch>
             </React.Fragment>

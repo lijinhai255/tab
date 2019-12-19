@@ -13,7 +13,7 @@
     "babel-loader": "8.0.5",
     "babel-plugin-named-asset-import": "^0.3.1",
     "babel-preset-react-app": "^7.0.2",
-    "better-scroll": "^1.15.2",
+    "better-scroll": "^2.0.0-beta.2",
     "bfj": "6.1.1",
     "browser": "^0.2.6",
     "case-sensitive-paths-webpack-plugin": "2.2.0",

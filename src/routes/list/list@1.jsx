@@ -25,6 +25,28 @@ class list extends React.Component {
   }
   _initScroll() {
     const wrapper = this.refs.wrapper
+<<<<<<< .mine
+    const navwrap = this.refs.navwrap
+    // 获取所有的子元素 indexListContent.children[1].children; 
+    const navs = this.refs.nav;
+    navs.style.width = `${this.state.nav.length * 1.4}rem`
+    const navchild = navs.childNodes
+    this.navScroll = new BScroll(navwrap, {
+      scrollX: true,
+      scrollY: false,
+      click: true
+    })
+||||||| .r2332
+    const navwrap = this.refs.navwrap
+    // 获取所有的子元素 indexListContent.children[1].children; 
+    const navs = this.refs.nav;
+    navs.style.width = `${this.state.nav.length * 1.4}rem`
+    const navchild = navs.childNodes
+    this.navScroll = new BScroll(navwrap, {
+      scrollX: true,
+      click: true
+    })
+=======
     // this.navScroll = new BScroll(navwrap, {
     //   scrollX: true,
     //   click: true,
@@ -32,6 +54,7 @@ class list extends React.Component {
     //   bounceTime: 0,
 
     // })
+>>>>>>> .r2421
     // 初始化scroll
     this.bscroll = new BScroll(wrapper, {
       eventPassthrough: true,
@@ -58,19 +81,32 @@ class list extends React.Component {
   }
   _pullupFun() {
     const list = this.refs.list
+<<<<<<< .mine
+    list.classList.add(`${appstyle.pullUp}`);
+||||||| .r2332
+    list.classList.add(`${appstyle.pullDown}`);
+    console.log(list,"121")
+=======
     list.classList.add(`${appstyle.pullDown}`);
     console.log(list, "121")
+>>>>>>> .r2421
     //告诉bscroll已经完成了上滑操作
     this.bscroll.finishPullUp();
     // //刷新dom
     this.bscroll.refresh();
     console.log('上滑方法执行了')
+
   }
   //
   _pulldownFun() {
     const list = this.refs.list
     list.classList.add(`${appstyle.pullDown}`);
+<<<<<<< .mine
+||||||| .r2332
+    console.log(list,"121")
+=======
     console.log(list, "121")
+>>>>>>> .r2421
     this.bscroll.finishPullDown();
     this.bscroll.refresh()
     console.log('加载方法执行了')
@@ -132,10 +168,19 @@ class list extends React.Component {
             <li className={appstyle.carousel_item}
               style={{ position: "relative" }}
               ref="list"
+<<<<<<< .mine
+               >
+||||||| .r2332
+               >
+              <div 
+              className={appstyle.content} 
+                >
+=======
             >
               <div
                 className={appstyle.content}
               >
+>>>>>>> .r2421
                 <div className={appstyle.content_content}>
                   <dl>
                     <dt><img src="" /></dt>
@@ -194,7 +239,6 @@ class list extends React.Component {
                     </dd>
                   </dl>
                 </div>
-              </div>
             </li>
           </ul>
         </div>
